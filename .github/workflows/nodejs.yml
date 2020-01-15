@@ -19,6 +19,9 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm ci
+          npm install -g --silent gh-pages
+          git config user.email ${{ secrets.USER_EMAIL }}
+          git config user.name ${{secrets.USER_NAME}}
           npm test
           npm run deploy --if-present
         env:
