@@ -15,7 +15,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/tyeknapp2/gatsby-hello-world.git"
   },
   "dependencies": {
-    "gatsby": "^2.18.12",
+    "gatsby": "^4.25.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
